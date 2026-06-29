@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celsio Watt Smart</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#07111f,#0b2b45,#07111f);
+color:white;
+padding:25px;
+}
+
+header{
+text-align:center;
+margin-bottom:35px;
+}
+
+header h1{
+font-size:42px;
+color:#00E5FF;
+}
+
+header p{
+color:#b5d9ff;
+margin-top:8px;
+}
+
+.dashboard{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+padding:22px;
+border-radius:20px;
+border:1px solid rgba(255,255,255,.15);
+box-shadow:0 0 20px rgba(0,229,255,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 0 30px #00E5FF;
+}
+
+.card h3{
+color:#00E5FF;
+margin-bottom:12px;
+}
+
+.card h1{
+font-size:34px;
+}
+
+.section{
+margin-top:35px;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+padding:25px;
+border-radius:20px;
+}
+
+.section h2{
+color:#00E5FF;
+margin-bottom:18px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+padding:14px;
+text-align:left;
+border-bottom:1px solid rgba(255,255,255,.15);
+}
+
+th{
+color:#00E5FF;
+}
+
+.status{
+color:#00ff99;
+font-weight:bold;
+}
+
+.warning{
+color:#ffb000;
+font-weight:bold;
+}
+
+button{
+margin-top:20px;
+padding:14px 30px;
+background:#00E5FF;
+color:black;
+font-weight:bold;
+border:none;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:#00ff99;
+}
+
+footer{
+margin-top:40px;
+text-align:center;
+color:#bcdcff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>⚡ Celsio Watt Smart</h1>
+
+<p>Know Every Watt. Save Every Unit.</p>
+
+</header>
+
+<div class="dashboard">
+
+<div class="card">
+<h3>⚡ Today's Usage</h3>
+<h1>3.45 kWh</h1>
+</div>
+
+<div class="card">
+<h3>🔋 Voltage</h3>
+<h1>229V</h1>
+</div>
+
+<div class="card">
+<h3>⚙ Current</h3>
+<h1>5.2A</h1>
+</div>
+
+<div class="card">
+<h3>💰 Estimated Bill</h3>
+<h1>₹1240</h1>
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>🏠 Connected Appliances</h2>
+
+<table>
+
+<tr>
+
+<th>Appliance</th>
+
+<th>Status</th>
+
+<th>Power</th>
+
+</tr>
+
+<tr>
+
+<td>🌀 Fan</td>
+
+<td class="status">ON</td>
+
+<td>75W</td>
+
+</tr>
+
+<tr>
+
+<td>📺 TV</td>
+
+<td class="status">ON</td>
+
+<td>120W</td>
+
+</tr>
+
+<tr>
+
+<td>❄️ AC</td>
+
+<td>OFF</td>
+
+<td>0W</td>
+
+</tr>
+
+<tr>
+
+<td>🧊 Refrigerator</td>
+
+<td class="status">ON</td>
+
+<td>180W</td>
+
+</tr>
+
+<tr>
+
+<td>📱 Mobile Charger</td>
+
+<td class="status">ON</td>
+
+<td>18W</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<div class="section">
+
+<h2>📊 Weekly Usage</h2>
+
+<p>Mon : 3.2 kWh</p>
+
+<p>Tue : 3.5 kWh</p>
+
+<p>Wed : 3.1 kWh</p>
+
+<p>Thu : 3.8 kWh</p>
+
+<p>Fri : 3.4 kWh</p>
+
+</div>
+
+<div class="section">
+
+<h2>⚠ Fault Detection</h2>
+
+<p class="warning">
+
+Refrigerator is consuming more power than expected.
+
+</p>
+
+<p>
+
+Possible Reason : Compressor requires servicing.
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>🤖 AI Suggestion</h2>
+
+<p>
+
+Fan has been running continuously for 8 hours.
+
+Estimated Monthly Saving : ₹150
+
+</p>
+
+<button>Connect Sensor (Prototype)</button>
+
+</div>
+
+<footer>
+
+Prototype UI • Celsio Watt Smart • Sample Data Only
+
+</footer>
+
+</body>
+
+</html>
